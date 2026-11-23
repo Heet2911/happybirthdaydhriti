@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#dff1f3">
+<title>For Dhittu ♡ — Lotus & Sea</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Sacramento&display=swap');
+:root{--rose:#e47da7;--deep:#286b83;--blush:#fff0f5;--paper:#fffafd;--ink:#294653;--muted:#718c98;--line:#d7e9ed;--lilac:#e6f3f6;--sea:#dff1f3;--shadow:0 18px 48px #286b8318}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 10% 10%,#ffe3ed 0,transparent 42%),radial-gradient(ellipse at 90% 80%,#d9f0f3 0,transparent 42%),#f8fdfe;overflow-x:hidden}
+body:before{content:'♡     ✧       ♡      ✦       ♡';position:fixed;inset:0;pointer-events:none;color:#69aebe;opacity:.12;font-size:25px;letter-spacing:20px;line-height:100px;word-break:break-all;z-index:0}
+.wrap{position:relative;z-index:1;width:min(100% - 28px,1000px);margin:auto;padding:28px 0 55px;min-height:100vh}.topline{text-align:center;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#638c9b;margin:4px 0 28px}.screen{display:none;animation:appear .5s ease both}.screen.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero{display:grid;grid-template-columns:1fr .85fr;gap:38px;align-items:center;min-height:65vh}.hero-title{font:700 clamp(52px,9vw,96px)/.95 'Playfair Display';color:var(--deep);margin:0 0 12px}.script{font:40px 'Sacramento',cursive;color:#d4779e;margin:0}.hero-copy{text-align:center}.lotus{width:112px;margin:0 auto 10px;filter:drop-shadow(0 7px 9px #286b8318);animation:lotusFloat 4s ease-in-out infinite}.lotus svg{display:block;width:100%;height:auto}.paper:before{content:'✿';position:absolute;left:20px;bottom:12px;color:#8fc4d0;font-size:19px;opacity:.8}@keyframes lotusFloat{50%{transform:translateY(-5px)}}.portrait{width:min(300px,75vw);aspect-ratio:1;border:9px solid white;outline:2px dashed #d6a3bb;border-radius:48% 48% 45% 45%;margin:22px auto 0;overflow:hidden;background:linear-gradient(135deg,#f9dce8,#d9eff2);box-shadow:var(--shadow);display:grid;place-items:center}.portrait img{width:100%;height:100%;object-fit:cover}.placeholder{padding:20px;text-align:center;color:#638c9b;font:30px 'Sacramento'}
+.paper,.lock-card,.music-card,.gift-card,.quiz-card{background:var(--paper);border:1px solid var(--line);border-radius:25px;padding:clamp(22px,5vw,42px);box-shadow:var(--shadow);position:relative}.paper{max-width:790px;margin:auto}.paper:after{content:'♡';position:absolute;right:22px;top:12px;color:#e28caf;font-size:25px}.paper h2{font:42px 'Sacramento';color:var(--rose);margin:0 0 14px}.paper p{line-height:1.9;white-space:pre-line;margin:12px 0}.sign{font:34px 'Sacramento';color:var(--rose);margin-top:22px!important}.lock-card{width:min(100%,355px);margin:auto;text-align:center;padding:26px}.lock-card h3{font-size:10px;letter-spacing:3px;color:var(--muted);margin:0 0 18px}.dots{display:flex;justify-content:center;gap:10px;margin-bottom:18px}.dot{width:36px;height:40px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;background:white;color:var(--rose)}.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.key{border:1px solid var(--line);background:white;border-radius:50%;width:53px;height:53px;margin:auto;font:500 17px 'DM Sans';color:var(--ink);cursor:pointer}.key:hover{background:#e7f5f7}.key.action{font-size:10px}.primary,.secondary{border-radius:999px;padding:13px 23px;font-weight:700;letter-spacing:.4px;cursor:pointer;transition:.2s}.primary{border:0;background:var(--deep);color:white;box-shadow:0 7px 18px #873b602c}.primary:hover{transform:translateY(-2px);background:#71304f}.secondary{border:1px solid #b9dce3;background:#f7fcfd;color:var(--deep)}.error{height:18px;color:#b84e7b;font-size:12px;margin:7px 0}.center{text-align:center}.section-title{font:600 clamp(36px,6vw,57px) 'Playfair Display';color:var(--deep);text-align:center;margin:0 0 8px}.sub{text-align:center;color:var(--muted);margin:0 0 26px}.nav{display:flex;justify-content:center;gap:12px;margin-top:24px;flex-wrap:wrap}.tiny{font-size:11px;color:#a58b9a;text-align:center;margin-top:18px}
+.memory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.memory{background:white;padding:9px 9px 14px;box-shadow:0 7px 20px #76516a1b;transform:rotate(var(--r));border-radius:3px}.memory img{width:100%;aspect-ratio:1;object-fit:cover;background:#e1f1f3;display:block}.memory .no-photo{aspect-ratio:1;display:grid;place-items:center;background:linear-gradient(135deg,#f8dce8,#dceff2);font-size:34px}.memory p{text-align:center;font:24px 'Sacramento';margin:9px 0 0;color:#84536f}
+.timeline{max-width:700px;margin:28px auto 0;position:relative}.timeline:before{content:'';position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:#b8dce3}.moment{position:relative;margin:0 0 18px 48px;padding:17px 20px;background:#f8fdfe;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 22px #76516a0d}.moment:before{content:'♡';position:absolute;left:-40px;top:15px;color:var(--rose);font-size:20px}.moment time{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#648f9e}.moment h3{font:26px 'Playfair Display';color:var(--deep);margin:5px 0}.moment p{line-height:1.7;margin:0;color:#735e6b}
+.music-card,.gift-card,.quiz-card{max-width:520px;margin:auto;text-align:center}.vinyl{width:180px;height:180px;border-radius:50%;margin:0 auto 20px;background:repeating-radial-gradient(circle,#292338 0 5px,#3a3047 6px 8px);display:grid;place-items:center;box-shadow:0 8px 20px #30243a33;animation:spin 8s linear infinite;animation-play-state:paused}.vinyl.playing{animation-play-state:running}@keyframes spin{to{transform:rotate(360deg)}}.vinyl span{width:58px;height:58px;border-radius:50%;background:#e47da7;border:7px solid #f6c5d8;display:grid;place-items:center;color:white}.gift{font-size:95px;cursor:pointer;filter:drop-shadow(0 9px 12px #b65a8a25);transition:.25s}.gift:hover{transform:translateY(-5px) rotate(-5deg)}.gift-message{display:none;line-height:1.8;margin-top:15px}.gift-message.open{display:block;animation:appear .5s ease}.quiz-options{display:grid;gap:10px;margin-top:18px}.quiz-options button{border:1px solid var(--line);background:white;border-radius:15px;padding:13px;color:var(--ink);cursor:pointer}.quiz-options button:hover{background:#eaf6f7}.quiz-feedback{min-height:25px;color:var(--deep);font-weight:600;margin-top:15px}.final-card{text-align:center;max-width:700px;margin:auto}.cake{font-size:85px}.big-wish{font:700 clamp(43px,8vw,78px)/1.05 'Playfair Display';color:var(--deep);margin:12px 0}.confetti{position:fixed;top:-25px;z-index:10;pointer-events:none;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(700deg);opacity:0}}.heart{position:fixed;bottom:-30px;z-index:0;pointer-events:none;color:#d889aa;animation:floatUp linear forwards;opacity:.55}@keyframes floatUp{to{transform:translateY(-110vh) translateX(35px) rotate(25deg);opacity:0}}
+#timelineScreen:before,#timelineScreen:after{content:none}
+@media(max-width:680px){.hero{grid-template-columns:1fr;gap:22px;text-align:center}.hero-title{font-size:62px}.portrait{width:215px}.memory-grid{grid-template-columns:repeat(2,1fr);gap:12px}.wrap{padding-top:17px}.paper{padding:24px}.topline{margin-bottom:18px}}
+
+/* ===== LOTUS GARDEN VISUAL UPGRADE ===== */
+:root{
+ --rose:#e47da7;--deep:#286b83;--blush:#fff0f5;--paper:#fffafd;
+ --ink:#294653;--muted:#718c98;--line:#d7e9ed;--lilac:#e6f3f6;
+ --sea:#dff1f3;--sea-deep:#4e94a5;--pink-soft:#fbe3ec;
+ --shadow:0 18px 48px rgba(40,107,131,.12);
+}
+body{
+ background:
+  radial-gradient(ellipse at 8% 8%,rgba(255,215,230,.85),transparent 34%),
+  radial-gradient(ellipse at 92% 18%,rgba(195,231,237,.8),transparent 34%),
+  radial-gradient(ellipse at 50% 100%,rgba(245,222,235,.55),transparent 42%),
+  #f8fdfe;
+}
+body:before{
+ content:"✿     ♡      🪷      ✧       ♡      🪷";
+ color:#65aabb;opacity:.10;font-size:24px;letter-spacing:18px;line-height:110px;
+}
+.wrap{width:min(100% - 28px,1040px)}
+.screen{
+ position:relative;isolation:isolate;overflow:hidden;
+ padding:clamp(12px,2vw,24px) 0 24px;
+}
+.screen:before,.screen:after{
+ position:absolute;z-index:-1;pointer-events:none;user-select:none;
+ font-family:Georgia,serif;line-height:1;
+}
+.screen:before{
+ content:"🪷";right:1.5%;top:5%;font-size:clamp(42px,7vw,76px);
+ opacity:.13;transform:rotate(13deg);
+ filter:drop-shadow(0 8px 10px rgba(40,107,131,.12));
+}
+.screen:after{
+ content:"🪷";left:1%;bottom:3%;font-size:clamp(30px,5vw,55px);
+ opacity:.10;transform:rotate(-18deg);
+}
+.hero{
+ position:relative;border-radius:34px;overflow:hidden;
+ background:
+  radial-gradient(ellipse at 15% 15%,rgba(255,255,255,.95),transparent 34%),
+  radial-gradient(ellipse at 85% 80%,rgba(204,237,241,.8),transparent 42%),
+  linear-gradient(135deg,#fff0f5 0%,#fce8ef 42%,#e3f4f6 100%);
+ border:1px solid rgba(255,255,255,.9);
+ box-shadow:0 22px 70px rgba(40,107,131,.11);
+ padding:clamp(18px,3vw,34px);
+}
+.hero:before{
+ content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.75);
+ border-radius:26px;pointer-events:none;
+}
+.hero-copy{position:relative}
+.hero-title{
+ text-shadow:0 8px 25px rgba(40,107,131,.10);
+ background:linear-gradient(110deg,#286b83 15%,#bd5682 85%);
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.script{color:#d4779e;text-shadow:0 4px 18px rgba(212,119,158,.13)}
+.lotus{width:145px;margin:0 auto 4px;filter:drop-shadow(0 12px 12px rgba(40,107,131,.16))}
+.lotus svg{overflow:visible}
+.portrait{
+ border:10px solid rgba(255,255,255,.94);outline:2px dashed #a9d4dc;
+ box-shadow:0 16px 42px rgba(40,107,131,.16),0 0 0 9px rgba(255,255,255,.25);
+ background:linear-gradient(145deg,#f8dce8,#d9eff2);
+}
+.paper,.lock-card,.music-card,.gift-card,.quiz-card{
+ background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(249,253,253,.96));
+ border:1px solid rgba(179,216,224,.72);
+ box-shadow:0 18px 48px rgba(40,107,131,.10),0 3px 12px rgba(212,119,158,.06);
+}
+.paper:after{content:"🪷";font-size:23px;opacity:.75;right:19px;top:14px}
+.paper:before{content:"✿";color:#77b8c4;opacity:.65}
+.section-title{background:linear-gradient(100deg,#286b83,#bd5682);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:#7895a0}
+.primary{
+ background:linear-gradient(105deg,#286b83,#3f91a3 55%,#bd5682);
+ box-shadow:0 8px 22px rgba(40,107,131,.20);
+}
+.primary:hover{background:linear-gradient(105deg,#225b70,#347d90 55%,#a94a72)}
+.secondary{border-color:#b9dce3;background:linear-gradient(120deg,#f8fdfe,#fff6fa);color:#286b83}
+.key{border-color:#d5e9ed;box-shadow:0 4px 12px rgba(40,107,131,.06)}
+.key:hover{background:#e9f7f8}
+.memory{
+ border-radius:8px;background:linear-gradient(145deg,#fff,#fff8fb);
+ box-shadow:0 10px 26px rgba(40,107,131,.12);
+ transition:transform .25s,box-shadow .25s;
+}
+.memory:hover{transform:translateY(-6px) rotate(0deg)!important;box-shadow:0 16px 32px rgba(40,107,131,.16)}
+.memory img,.memory .no-photo{border-radius:3px}
+.memory p{color:#bd648c}
+.moment{
+ background:linear-gradient(110deg,#fffafd,#f3fbfc);
+ border-color:#d9eaf0;box-shadow:0 9px 25px rgba(40,107,131,.07);
+}
+.moment:before{content:"🪷";font-size:17px;left:-43px;top:15px}
+.moment time{color:#5f9cac}
+.moment h3{color:#286b83}
+.vinyl{box-shadow:0 12px 30px rgba(40,107,131,.2);border:5px solid #e7f4f6}
+.vinyl span{background:#e47da7;border-color:#f8d5e3}
+.gift{filter:drop-shadow(0 10px 14px rgba(40,107,131,.18))}
+.quiz-options button{border-color:#d5e9ed}
+.quiz-options button:hover{background:#edf8f9}
+.final-card{
+ background:
+  radial-gradient(ellipse at 10% 0%,rgba(255,222,235,.55),transparent 45%),
+  radial-gradient(ellipse at 100% 100%,rgba(205,235,239,.7),transparent 48%),
+  rgba(255,255,255,.93);
+}
+.big-wish{
+ background:linear-gradient(110deg,#286b83,#bd5682);
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.nav{gap:10px}
+.tiny{color:#7c9aa4}
+.error{color:#b84e7b}
+.lotus-divider{
+ display:flex;align-items:center;justify-content:center;gap:12px;
+ color:#79b7c3;margin:22px auto;font-size:20px;opacity:.8;
+}
+.lotus-divider:before,.lotus-divider:after{
+ content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,#a8d4dc);
+}
+.lotus-divider:after{transform:scaleX(-1)}
+/* Ambient floating hearts, lotus petals and tiny sea-glass sparkles */
+.ambient-float{
+ position:fixed;bottom:-50px;left:var(--x);z-index:8;pointer-events:none;
+ color:var(--c);font-size:var(--s);opacity:0;
+ text-shadow:0 4px 12px rgba(40,107,131,.12);
+ animation:riseFloat var(--d) linear forwards;
+}
+@keyframes riseFloat{
+ 0%{transform:translate3d(0,0,0) rotate(0deg) scale(.75);opacity:0}
+ 12%{opacity:.72}
+ 75%{opacity:.5}
+ 100%{transform:translate3d(var(--drift),-115vh,0) rotate(40deg) scale(1.12);opacity:0}
+}
+#timelineScreen:before,#timelineScreen:after{content:none}
+@media(max-width:680px){
+ .hero{border-radius:25px;padding:22px 16px}
+ .screen:before{right:0;top:2%;font-size:42px}
+ .screen:after{left:0;bottom:1%;font-size:34px}
+ .lotus{width:118px}
+}
+
+
+.open-when-list{display:grid;gap:13px;max-width:760px;margin:0 auto}
+.open-when-item{background:var(--paper);border:1px solid var(--line);border-radius:19px;box-shadow:var(--shadow);overflow:hidden}
+.open-when-trigger{width:100%;border:0;background:transparent;color:var(--deep);padding:19px 21px;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:14px;font:600 16px 'Playfair Display';cursor:pointer}
+.open-when-trigger span:last-child{color:var(--rose);font-size:22px;flex:none}
+.open-when-letter{display:none;padding:0 22px 22px;line-height:1.9;color:var(--ink);white-space:pre-line}
+.open-when-item.open .open-when-letter{display:block}
+.open-when-item.open .open-when-trigger span:last-child{transform:rotate(45deg)}
+.open-when-note{font-size:12px;color:var(--muted);text-align:center;margin:17px 0 0}
+
+</style></head>
+<body><main class="wrap"><div class="topline">A private space just for MY DIVA ♡　✿　🪷</div>
+<section class="screen active" id="welcome"><div class="hero"><div class="hero-copy"><div class="lotus" aria-label="Lotus flower decoration">
+<svg viewBox="0 0 180 112" role="img" aria-hidden="true">
+ <path d="M90 91 C48 88 30 65 38 39 C59 43 76 60 90 91Z" fill="#f4a9c4"/>
+ <path d="M90 91 C132 88 150 65 142 39 C121 43 104 60 90 91Z" fill="#f4a9c4"/>
+ <path d="M90 91 C59 72 58 38 90 10 C122 38 121 72 90 91Z" fill="#e981a9"/>
+ <path d="M90 91 C70 67 75 36 90 10 C105 36 110 67 90 91Z" fill="#f7bfd2"/>
+ <path d="M25 93 Q90 105 155 93" fill="none" stroke="#4d9db0" stroke-width="4" stroke-linecap="round"/>
+ <path d="M54 99 Q90 108 126 99" fill="none" stroke="#8cc8d1" stroke-width="3" stroke-linecap="round"/>
+</svg></div><h1 class="hero-title">for you</h1><p class="script">a little surprise for <span data-name>Dhittu</span></p><div class="portrait" id="coverPortrait"><div class="placeholder">your prettiest picture<br>goes here ♡</div></div></div><div class="lock-card"><h3>ENTER YOUR SECRET PASSCODE</h3><div class="dots" id="dots"><div class="dot">♡</div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div><div class="keypad" id="keypad"><button class="key">1</button><button class="key">2</button><button class="key">3</button><button class="key">4</button><button class="key">5</button><button class="key">6</button><button class="key">7</button><button class="key">8</button><button class="key">9</button><button class="key action" data-action="clear">CLEAR</button><button class="key">0</button><button class="key action" data-action="back">⌫</button></div><p class="error" id="error"></p><button class="primary" id="unlock">UNLOCK ♡</button><p class="tiny">a little secret, just between us</p></div></div></section>
+<section class="screen" id="letter"><div class="paper"><h2>Dear <span data-name>Dhittu</span>,</h2><div id="letterText"></div><p class="sign" id="signature"></p></div><div class="nav"><button class="secondary" data-prev="welcome">← back</button><button class="primary" data-next="memories">our memories →</button></div></section>
+<section class="screen" id="memories"><h2 class="section-title">little moments, big memories</h2><p class="sub">a little gallery of someone very special ♡</p><div class="lotus-divider" aria-hidden="true">🪷</div><div class="memory-grid" id="memoryGrid"></div><div class="nav"><button class="secondary" data-prev="letter">← back</button><button class="primary" data-next="timelineScreen">our story →</button></div></section>
+<section class="screen" id="timelineScreen"><h2 class="section-title">our little timeline</h2><p class="sub">the dates and moments I want to keep close</p><div class="timeline" id="timeline"></div><div class="nav"><button class="secondary" data-prev="memories">← back</button><button class="primary" data-next="openWhen">open when... →</button></div></section>
+<section class="screen" id="openWhen"><h2 class="section-title">open when...</h2><p class="sub">little letters for the days when you need them ♡</p><div class="lotus-divider" aria-hidden="true">🪷</div><div class="open-when-list" id="openWhenList"></div><p class="open-when-note">you can open these whenever you need a little love ♡</p><div class="nav"><button class="secondary" data-prev="timelineScreen">← back</button><button class="primary" data-next="music">our little soundtrack →</button></div></section>
+<section class="screen" id="music"><h2 class="section-title">our little soundtrack</h2><p class="sub">press play — this one's for you</p><div class="lotus-divider" aria-hidden="true">🪷</div><div class="music-card"><div class="vinyl" id="vinyl"><span>♡</span></div><h2 id="songTitle" style="font:600 27px 'Playfair Display';margin:0 0 5px">Our song</h2><p class="sub" id="songArtist"></p><audio id="audio" controls style="width:100%;display:none"></audio><p class="tiny" id="musicHint">Add your MP3 to the assets folder to make this player work.</p></div><div class="nav"><button class="secondary" data-prev="openWhen">← back</button><button class="primary" data-next="giftScreen">one last thing →</button></div></section>
+<section class="screen" id="giftScreen"><h2 class="section-title">a little something for you</h2><p class="sub">go on… tap your gift ♡</p><div class="lotus-divider" aria-hidden="true">🪷</div><div class="gift-card"><div class="gift" id="gift">🎁</div><p class="tiny">a gift, wrapped with a lot of love</p><div class="gift-message" id="giftMessage"></div></div><div class="nav"><button class="secondary" data-prev="music">← back</button><button class="primary" data-next="final">open your birthday wish →</button></div></section>
+<section class="screen" id="final"><div class="paper final-card"><div class="cake">🎂</div><p class="script">to the most wonderful girl</p><h1 class="big-wish">Happy Birthday,<br><span data-name>Dhittu</span>!</h1><p id="finalMessage" style="line-height:1.9"></p><p class="sign" id="finalSign"></p><button class="primary" id="celebrate">MAKE A WISH ✨</button></div><div class="nav"><button class="secondary" data-prev="giftScreen">← go back</button><button class="secondary" id="restart">relive the surprise ↻</button></div></section>
+</main>
+<script>
+/* =========================================================
+   DHITTU'S BIRTHDAY WEBSITE — EASY EDIT ZONE
+   Change text and filenames here. Add as many photos, letter
+   paragraphs, timeline moments and quiz questions as you like.
+   Keep each item inside the brackets and separate items by commas.
+   ========================================================= */
+const CONFIG = {
+  herName: "Dhittu",
+  passcode: "2911", // CHANGE THIS to a special 4-digit number
+  coverPhoto: "assets/234.jpg",
+  letter: [
+    "Happiest 18th Birthday, Dhittu ♡",
+    "Omggg, my BABY has officially turned in an ADULT; WOHOOOOOO.",
+    "This day is totally yours and would pray for all the happiness for mine to be yours and all your pain to be mine. Just smile more wide today and enjoy your day till the fullest.",
+    "I hope you like what I have made and also never forget how much special you really are for me!!",
+    "It is my dhittu's bday and i really pray that this would be one of the craziest day with full of memories and fun. ",
+    "There is so much more I want to say, but I'll say some of it and rest in person if destiny makes us meet. I really am thankful to the god for ur existence. ♡"
+  ],
+  signature: "With lots of love ♡",
+  memories: [
+    { photo:"assets/789.jpg", caption:"your smile ♡" },
+    { photo:"assets/912.jpg", caption:"the face full of stories" },
+    { photo:"assets/678.jpg", caption:"pretty as always" },
+    { photo:"assets/123.jpg", caption:"one for the books" },
+    { photo:"assets/345.jpg", caption:"this little memory" },
+    { photo:"assets/890.jpg", caption:"one more moment, please" },
+    { photo:"assets/567.jpg", caption:"another reason to smile" },
+    { photo:"assets/456.jpg", caption:"simply you ♡" },
+    { photo:"assets/imp.JPEG", caption:"and many more ♡" }
+    // Add more: { photo:"assets/photo-10.jpg", caption:"your caption" },
+  ],
+  timeline: [
+    { date:"The Beginning", title:"Where it all started", text:"I still remember that very first glimpse of you in 4th std., when something about you unknowingly pulled my heart towards you. And maybe it was God's plan that we ended up in the same class again in 7th and 8th std., because those literally became the BESTEST years of my schooling. I miss those little little moments with you soooo muchhh — our silly eraser fights, cheating answers, nok-jhoks and all those countless memories which still hold such a special place in my heart. And ohhh, those beautiful eyes of yours!!! They literally hypnotized me and made me fall in crazzzyyyy love with you without even realising it. But then life had its own plans, I left the school and we eventually lost touch. Who knew that after almost 2 years of no contact, one random message on Brother's Day would bring us back together and turn into such a beautiful bond? From being schoolmates to becoming best friends and eventually finding something so special in each other, what a journey it has been! And then came 28th May, 2023 — our most special and holy day, when we stepped into one of the most beautiful phases of my life. Honestly, if I ever get a chance to relive it all, I'd choose every single moment with you all over again. And no matter how much time passes or how life turns out for us, I hope you always know that what we shared will forever remain one of the most precious parts of my life. I'm genuinely grateful that out of all the people in this world, our paths crossed, and I got to experience something as beautiful as US. You will always have a very special place in my heart, meri gurl. ♡" },
+    { date:"Today", title:"Your birthday", text:"You have absolutely no idea how excited I get for your birthday. Honestly, I think I end up celebrating it with more enthusiasm than you do, hehe. But can you blame me? It's not just another birthday; it's the birthday of my FAVOURITE GURLLL, my prettiest distraction, and someone I thank God for having in this world. I genuinely pray that life spoils you with all the happiness, love and success you deserve (and maybe a little extra because you're my favourite). Keep smiling that pretty smile of yours, keep being your ridiculously adorable self, and never stop chasing everything your heart wishes for. I love you soooo much, Dhittttuuuu. Happy birthday, pretty girl! ♡♡♡♡. l wish you endless happiness and much more success. I love you soooo muchhhhh!! " },
+    { date:"The Night", title:"Days Without You", text:"A bond of almost 2 beautiful years, filled with so many memories, endless talks, little promises and countless moments, slowly fell apart because of my own repeated mistakes. I kept promising you that I'll change, that I'll do better and that I'll never repeat those things again, but unfortunately, I failed on my own words, not just once but many times. And trust me, I regret each and every one of those moments even today. Sometimes I genuinely wish I could go back in time and make that version of myself understand how precious you were and how badly he was hurting the girl who meant the entire world to him. Those mistakes took away my sunshine, my smile and someone who made even my most ordinary days feel special. But honestly, what hurt the most was not just losing our relationship, it was losing YOU from my everyday life. Not having you to share random things with, not being able to tell you every little detail of my day, not having those silly conversations and not having that happiness of knowing that you are there. I missed you in the most unexpected moments, sometimes while listening to a song, sometimes while looking at our old pictures and sometimes for absolutely no reason. There were so many moments when something happened and my first thought was to tell you, only to realise that things are not the same anymore. I know I cannot undo my mistakes or change what has already happened, but I genuinely wish I had understood the value of those little moments when I was actually living them. I never thought that someone who was once such a big part of my everyday life would become someone I'd miss this much. And if there's one thing I wish you to know, it's that those 2 years will always remain extremely special to me. No matter how things turned out, I'll forever be grateful that I got to experience that kind of love, happiness and togetherness with YOU. ♡" },
+    { date:"A last wish", title:"Promise made for the life", text:"From the day we got separated until today, Dhriti, and for all the days there isn’t and won’t be a single day when I'll love you any less than I did yesterday. My feelings for you have only grow deeper with every passing day. I know I've made mistakes, and I know you gave me more chances than I probably deserved, but I still fell short when all you wanted was to feel loved, understood and valued. I wish I could go back and change those moments, hold your hand a little tighter, understand you a little better and never make you feel like you were anything less than my priority. I regret those moments even today, but I don't want to remain the person who made those mistakes. I've reflected on myself, worked on my flaws and grown into someone more mature, someone who understands that love isn't just about saying promises but about proving them through actions every single day and literally I have been that person. And honestly, Dhittu, I miss you more than words could ever explain. I miss our silly conversations, our teasing, our little arguments, your presence, and all those ordinary moments that became extraordinary just because YOU were a part of them. I miss being your Vandro, hearing you call me your Gadhedo, and all those little things that were so uniquely ours. There are so many little things that happen every day that I wish I could share with you. Sometimes I catch myself wanting to tell you something, only to realise that things aren't the same anymore and I have changed myself. If I could make one promise for life, it would be that I'll never take the people I love for granted again. I cannot promise to be perfect, but I can promise to keep learning, understanding, respecting and growing. I don't know what the future holds, my Dhittu, but I know that I would always be yours, loving you and having you in my life will always remain one of the most beautiful parts of my story. And if life ever gives me another chance to make you smile, I'll make sure my actions speak louder than every promise I've ever made and frrr am that person. Loveee Youuu Loadsss ❤️" },
+    // Add more: { date:"Date", title:"Moment title", text:"Your memory..." },
+  ],
+  // CUSTOMISE THESE LETTERS: change each title and message, or add/remove letters.
+  openWhen: [
+    { title:"Open when you need a smile.", message:"The cutest person is just inside youuu...always keep smiling dhitttuuuu ♡" },
+    { title:"Open when you doubt yourself.", message:"My Warrior - you are the strongest person to exist on this planet. you can and will achieve whatever you want in your life. just be calm and never lose hope... ♡" },
+    { title:"Open when you miss old memories.", message:"Just call me whenever you miss me, on the very second ring i would just pick up ur call and shout out DHITTTUUUUU ♡" },
+    { title:"Open when you need a little reminder of how special you are.", message:"The 8th Wonder of the World is none other but You - Dhriti Sharma - my Kucchu Pucchu!! ♡" },
+    { title:"Open when you need motivation.", message:"My Gurl never lacks motivation - the dancer, the singer, the Best Delegate in MUNs, the BMC student, and much more awaiting... - i mean these many victories she has already conquered, already a SUPERHUMANN  ♡" }
+  ],
+  songTitle:"Song for Mahhh Dhittu",
+  songArtist:"our little soundtrack ♡",
+  songFile:"assets/our-song.mp3",
+  giftMessage:"Once again, Happiest Birthday to the most beautiful soullll! ❤️ Keep shining brighter and brighter, keep growing, keep chasing everything your heart desires, and never forget to enjoy every little moment life has to offer. Dhriti, always remember that I'll be cheering for you, believing in you and wishing the very best for you, even on the days when you find it difficult to believe in yourself. No matter how tough life gets(call me) or how lonely things(call me) might feel, I hope you always know that you'll have someone rooting for you, standing by your side and wanting to see you happy. I'll always be proud of the person you are and the person you're becoming. AND GIRLLLL, YOU LOOK FRRR SOOOO CUTIEEE TODAYYYYY!! LIKE HOW CAN SOMEONE BE THIS PRETTYYYY?! 😭💕 Loveee youuu sooooo muchhh, Dhittu! ♡",
+  finalMessage:"I hope u have enjoyed today as much as you enjoyed the 7th and 8th grade classes. Beautiful gurlll ur boiii is literally waiting for youu. You literally are my everything and no one could ever enter or make or replace the space that you have in me cuz you are the supreme of my soul. You have no idea how much i love and miss you Budayyy Gurlieee. Once again Many Many Happy Returns of the Day Dhitttuuuu, may this year bring you beautiful surprises, big wins, peaceful days and a thousand reasons to smile. LOVEEE YOU FUCKINGGG SOOOOO MUCHHHH ♡ MISS YOU SOOOOO MUCHHHH CUTIEEE PIEEE",
+  finalSignature:"always dhriti's heet ♡"
+};
+/* ======================= END EDIT ZONE ======================= */
+const $=s=>document.querySelector(s);let entered="",qIndex=0;
+function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('active',s.id===id));window.scrollTo({top:0,behavior:'smooth'})}
+function setName(){document.querySelectorAll('[data-name]').forEach(e=>e.textContent=CONFIG.herName)}
+function render(){setName();const cover=$('#coverPortrait');if(CONFIG.coverPhoto){const im=new Image();im.src=CONFIG.coverPhoto;im.alt='A favourite photo of '+CONFIG.herName;im.onload=()=>{cover.innerHTML='';cover.appendChild(im)}}
+ $('#letterText').innerHTML=CONFIG.letter.map(p=>`<p>${safe(p)}</p>`).join('');$('#signature').textContent=CONFIG.signature;
+ $('#memoryGrid').innerHTML=CONFIG.memories.map((m,i)=>`<article class="memory" style="--r:${i%2===0?-1.5:1.5}deg"><img src="${safe(m.photo)}" alt="Memory ${i+1}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="no-photo" style="display:none">♡</div><p>${safe(m.caption)}</p></article>`).join('');
+ $('#timeline').innerHTML=CONFIG.timeline.map(m=>`<article class="moment"><time>${safe(m.date)}</time><h3>${safe(m.title)}</h3><p>${safe(m.text)}</p></article>`).join('');
+ $('#songTitle').textContent=CONFIG.songTitle;$('#songArtist').textContent=CONFIG.songArtist;const audio=$('#audio');audio.src=CONFIG.songFile;audio.oncanplay=()=>{audio.style.display='block';$('#musicHint').style.display='none'};audio.onerror=()=>{audio.style.display='none';$('#musicHint').style.display='block'};
+ $('#giftMessage').textContent=CONFIG.giftMessage;$('#finalMessage').textContent=CONFIG.finalMessage;$('#finalSign').textContent=CONFIG.finalSignature;renderOpenWhen();}
+function renderOpenWhen(){
+ $('#openWhenList').innerHTML=CONFIG.openWhen.map((letter,i)=>`<article class="open-when-item"><button class="open-when-trigger" type="button" aria-expanded="false" data-open-letter="${i}"><span>${safe(letter.title)}</span><span>＋</span></button><div class="open-when-letter">${safe(letter.message)}</div></article>`).join('');
+ $('#openWhenList').querySelectorAll('[data-open-letter]').forEach(button=>button.addEventListener('click',()=>{
+   const item=button.closest('.open-when-item');
+   const isOpen=item.classList.toggle('open');
+   button.setAttribute('aria-expanded',String(isOpen));
+ }));
+}
+function updateDots(){document.querySelectorAll('.dot').forEach((d,i)=>d.textContent=entered[i]?'♥':(i===0&&!entered?'♡':''))}
+$('#keypad').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.action==='clear')entered='';else if(b.dataset.action==='back')entered=entered.slice(0,-1);else if(/^\d$/.test(b.textContent.trim())&&entered.length<4)entered+=b.textContent.trim();updateDots();$('#error').textContent=''});
+$('#unlock').addEventListener('click',()=>{if(entered===CONFIG.passcode){show('letter');entered='';updateDots()}else{$('#error').textContent='Not quite… try your special date ♡';entered='';updateDots()}});
+document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.next)));document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.prev)));
+$('#audio').addEventListener('play',()=>$('#vinyl').classList.add('playing'));$('#audio').addEventListener('pause',()=>$('#vinyl').classList.remove('playing'));
+$('#gift').addEventListener('click',()=>{$('#gift').textContent='💝';$('#giftMessage').classList.add('open');confetti()});
+function confetti(){const chars=['♡','♥','✦','✧','💗','✨'];for(let i=0;i<55;i++){const el=document.createElement('div');el.className='confetti';el.textContent=chars[Math.floor(Math.random()*chars.length)];el.style.left=Math.random()*100+'vw';el.style.color=['#bd3b82','#d9a6c5','#9d80b8','#e8a7bd'][i%4];el.style.fontSize=(14+Math.random()*18)+'px';el.style.animationDuration=(3+Math.random()*4)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),7500)}}
+$('#celebrate').addEventListener('click',confetti);$('#restart').addEventListener('click',()=>{show('welcome');entered='';updateDots()});
+function floatingHeart(){
+ const h=document.createElement('span');h.className='ambient-float';
+ const items=document.querySelector('#timelineScreen')?.classList.contains('active')?['♡','♥']:['♡','♥','✿','❀','🌸','❁','✧'];
+ const colors=['#e47da7','#69aebe','#8fc4d0','#d98aaa','#7db7c4'];
+ h.textContent=items[Math.floor(Math.random()*items.length)];
+ h.style.setProperty('--x',Math.random()*100+'vw');
+ h.style.setProperty('--c',colors[Math.floor(Math.random()*colors.length)]);
+ h.style.setProperty('--s',(13+Math.random()*21)+'px');
+ h.style.setProperty('--d',(9+Math.random()*8)+'s');
+ h.style.setProperty('--drift',(-45+Math.random()*90)+'px');
+ document.body.appendChild(h);setTimeout(()=>h.remove(),18000)
+}
+setInterval(floatingHeart,850);
+for(let i=0;i<9;i++)setTimeout(floatingHeart,i*420);
+render();
+</script></body></html>
